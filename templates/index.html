@@ -24,6 +24,10 @@
         <tr>
             <td>{{task.task}}</td>
             <td>{{task.date_added.date()}}</td>
+            <td>
+                <a href="/delete/{{task.id}}">Delete</a>
+                <a href="">Update</a>
+            </td>
         </tr>
         {% endfor %}
     </table>
